@@ -26,6 +26,10 @@ export default css({
         bottom: '5%',
         textAlign: 'center',
         width: '100%'
+    },
+    '& a': {
+        color : 'white',
+        fontSize : '0.8em'
     }
 
 });
