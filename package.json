@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-responsive": "^1.x"
+    "react-responsive": "^1.x",
+    "antd": "2.12.3"
   },
   "devDependencies": {
     "glamor": "^2.20.25",

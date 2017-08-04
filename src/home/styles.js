@@ -3,6 +3,11 @@ import  backgroundImage from '../img/running-wood.jpg';
 import  backgroundImageMobile from '../img/running-wood-mobile.jpg';
 
 export default css({
+    '& .header' : {
+        position: 'absolute',
+        width: '100%',
+        backgroundColor: 'rgba(0,0,0,0)'
+    },
     '.home': {
         height: '100vh',
         backgroundSize: 'cover',
