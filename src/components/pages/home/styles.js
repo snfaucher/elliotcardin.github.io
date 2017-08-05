@@ -1,6 +1,6 @@
 import {css} from 'glamor';
-import  backgroundImage from '../img/running-wood.jpg';
-import  backgroundImageMobile from '../img/running-wood-mobile.jpg';
+import  backgroundImage from '../../../img/running-wood.jpg';
+import  backgroundImageMobile from '../../../img/running-wood-mobile.jpg';
 
 export default css({
     '& .header': {

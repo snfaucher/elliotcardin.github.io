@@ -20,9 +20,13 @@ class MainMenu extends Component {
     renderNonMobile() {
         return (
             <div {...style}>
-                <div className="brand">Elliot Cardin</div>
+                <Link to="/" style={{textDecoration: 'none'}}>
+                    <div className="brand">
+                        Elliot Cardin
+                    </div>
+                </Link>
                 <Menu
-                    className="menu"
+                    className={`menu ${this.props.fixed ? 'fixed' : ''}`}
                     mode='horizontal'
                 >
 
@@ -48,8 +52,9 @@ class MainMenu extends Component {
                         </Link>
                     </MenuItem>
                 </Menu>
-                </div>
-        );
+            </div>
+        )
+            ;
     }
 
     renderMobile() {
@@ -118,7 +123,7 @@ class MainMenu extends Component {
 }
 
 MainMenu.propTypes = {
-    transparent: PropTypes.bool
+    fixed: PropTypes.bool
 };
 
 export default MainMenu;
