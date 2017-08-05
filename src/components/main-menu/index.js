@@ -19,10 +19,10 @@ class MainMenu extends Component {
 
     renderNonMobile() {
         return (
-
             <div {...style}>
+                <div className="brand">Elliot Cardin</div>
                 <Menu
-                    className={`menu ${this.props.transparent ? 'transparent' : ''}`}
+                    className="menu"
                     mode='horizontal'
                 >
 
@@ -33,8 +33,22 @@ class MainMenu extends Component {
                                     </span>
                         </Link>
                     </MenuItem>
+                    <MenuItem key="gallerie">
+                        <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                                    <span className="link-caption">
+                                        Gallerie
+                                    </span>
+                        </Link>
+                    </MenuItem>
+                    <MenuItem key="resultats">
+                        <Link to="/resultats" style={{textDecoration: 'none'}}>
+                                    <span className="link-caption">
+                                        Résultats
+                                    </span>
+                        </Link>
+                    </MenuItem>
                 </Menu>
-            </div>
+                </div>
         );
     }
 
@@ -53,6 +67,20 @@ class MainMenu extends Component {
                             <Link to="/a-propos" style={{textDecoration: 'none'}}>
                                     <span className="link-caption">
                                         À propos
+                                    </span>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem key="gallerie">
+                            <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                                    <span className="link-caption">
+                                        Gallerie
+                                    </span>
+                            </Link>
+                        </MenuItem>
+                        <MenuItem key="resultats">
+                            <Link to="/resultats" style={{textDecoration: 'none'}}>
+                                    <span className="link-caption">
+                                        Résultats
                                     </span>
                             </Link>
                         </MenuItem>
@@ -82,10 +110,10 @@ class MainMenu extends Component {
     }
 
     render() {
-        if (this.state.showMenuMobile) {
-            return this.renderMobile();
-        }
         return this.renderNonMobile();
+        if (this.state.showMenuMobile) {
+            //return this.renderMobile();
+        }
     }
 }
 

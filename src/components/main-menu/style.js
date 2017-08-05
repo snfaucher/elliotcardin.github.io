@@ -1,23 +1,21 @@
 import {css} from 'glamor';
 
 export default css({
-    width: '100vw',
+    width: '100%',
+    fontSize: '1.5em',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignsItems: 'center',
+    '& .brand': {
+        color: 'whitesmoke',
+        fontSize: '1.2em'
+    },
     '& .link-caption': {
         color: 'whitesmoke',
     },
-    '& a': {
-        color: 'whitesmoke',
-        ":hover": {
-            color: 'whitesmoke'
-        }
-    },
     '& .menu': {
-        borderBottomColor: 'rgba(0,0,0,0.5)',
-        width: '100%',
-        backgroundColor: 'rgba(1,1,1,0.1)',
-        display : 'flex',
-        justifyContent : 'flex-end',
-        color: 'white !important'
+        borderBottomColor: 'rgba(0,0,0,0)',
+        backgroundColor: 'rgba(0,0,0,0)',
     },
     '& .menu-mobile': {
         '& .link-caption': {
