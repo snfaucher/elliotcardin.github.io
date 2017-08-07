@@ -10,5 +10,20 @@ export default css({
     '& .gallerie': {
         paddingLeft: '5vw',
         paddingRight: '5vw'
+    },
+    '& .content': {
+        paddingLeft: '15vw',
+        paddingRight: '15vw'
+    },
+    '& .cover': {
+        backgroundImage: `url(/media/elliotcardin.jpg)`,
+        backgroundSize: 'cover',
+        height: '50vh'
+    },
+    '& .description': {
+        paddingTop: 30,
+        paddingLeft: 15,
+        paddingRight: 15,
+        paddingBottom: 15
     }
 });
