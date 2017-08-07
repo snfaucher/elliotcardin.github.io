@@ -18,10 +18,12 @@ class MainMenu extends Component {
     }
 
     renderNonMobile() {
+        const captionClass = `link-caption ${this.props.darkTheme ? 'dark' : ''}`;
+        const brandClass = `brand ${this.props.darkTheme ? 'dark' : ''}`;
         return (
             <div {...style}>
                 <Link to="/" style={{textDecoration: 'none'}}>
-                    <div className="brand">
+                    <div className={brandClass}>
                         Elliot Cardin
                     </div>
                 </Link>
@@ -32,21 +34,21 @@ class MainMenu extends Component {
 
                     <MenuItem key="a-propos">
                         <Link to="/a-propos" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         À propos
                                     </span>
                         </Link>
                     </MenuItem>
                     <MenuItem key="gallerie">
                         <Link to="/gallerie" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         Gallerie
                                     </span>
                         </Link>
                     </MenuItem>
                     <MenuItem key="resultats">
                         <Link to="/resultats" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         Résultats
                                     </span>
                         </Link>
@@ -58,6 +60,7 @@ class MainMenu extends Component {
     }
 
     renderMobile() {
+        const captionClass = `link-caption {${this.props.darkTheme ? 'dark' : ''}`;
         return (
             <div {...style}>
 
@@ -70,21 +73,21 @@ class MainMenu extends Component {
                     >
                         <MenuItem key="a-propos">
                             <Link to="/a-propos" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         À propos
                                     </span>
                             </Link>
                         </MenuItem>
                         <MenuItem key="gallerie">
                             <Link to="/gallerie" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         Gallerie
                                     </span>
                             </Link>
                         </MenuItem>
                         <MenuItem key="resultats">
                             <Link to="/resultats" style={{textDecoration: 'none'}}>
-                                    <span className="link-caption">
+                                    <span className={captionClass}>
                                         Résultats
                                     </span>
                             </Link>
@@ -103,7 +106,7 @@ class MainMenu extends Component {
                                 className="brand"
                                 onClick={()=> this.setState({mobileMenuOpen: true}) }
                             >
-                                <span className="link-caption">
+                                <span className={captionClass}>
                                     <Icon type="menu-unfold"/>
                                 </span>
                             </div>
@@ -123,7 +126,8 @@ class MainMenu extends Component {
 }
 
 MainMenu.propTypes = {
-    fixed: PropTypes.bool
+    fixed: PropTypes.bool,
+    darkTheme: PropTypes.bool
 };
 
 export default MainMenu;

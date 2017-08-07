@@ -2,13 +2,20 @@ import {css} from 'glamor';
 
 export default css({
     width: '100%',
-    fontSize: '1.5em',
+    fontSize: '1.2em',
     display: 'flex',
     justifyContent: 'space-between',
     alignsItems: 'center',
     '& .brand': {
         color: 'whitesmoke',
         fontSize: '1.2em'
+    },
+    '& .dark.brand': {
+        fontSize: '1.2em',
+        color: 'black'
+    },
+    '& .dark.link-caption': {
+        color: 'black',
     },
     '& .link-caption': {
         color: 'whitesmoke',

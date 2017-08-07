@@ -15,6 +15,7 @@ class Gallerie extends Component {
                 <Header className="header">
                     <MainMenu
                         fixed={false}
+                        darkTheme={true}
                     />
                 </Header>
                 <Content>
