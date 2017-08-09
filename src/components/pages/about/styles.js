@@ -12,8 +12,15 @@ export default css({
         paddingRight: '5vw'
     },
     '& .content': {
-        paddingLeft: '15vw',
-        paddingRight: '15vw'
+        paddingLeft: '30vw',
+        paddingRight: '30vw',
+        '@media(max-width: 768px)': {
+            paddingLeft: 5,
+            paddingRight: 5,
+        },
+        display: 'flex',
+        alignItems: 'center',
+        minHeight: '70vh'
     },
     '& .cover': {
         backgroundImage: `url(/media/elliotcardin.jpg)`,
@@ -24,6 +31,7 @@ export default css({
         paddingTop: 30,
         paddingLeft: 15,
         paddingRight: 15,
-        paddingBottom: 15
+        paddingBottom: 15,
+        lineHeight: '2em'
     }
 });

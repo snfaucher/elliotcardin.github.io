@@ -5,7 +5,7 @@ export default css({
     fontSize: '1.2em',
     display: 'flex',
     justifyContent: 'space-between',
-    alignsItems: 'center',
+    alignItems: 'center',
     '& .brand': {
         color: 'whitesmoke',
         fontSize: '1.2em'

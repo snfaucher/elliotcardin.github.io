@@ -30,36 +30,39 @@ class About extends Component {
                                         paddingBottom: 0
                                     }}>
                                     <Row >
-                                        <Col span={12}
+                                        <Col span={24}
                                              className="cover"
                                         >
                                         </Col>
                                         <Col
-                                            span={12}
+                                            span={24}
                                             className="description"
                                         >
-                                            Je ne suis pas le genre de personne à faire les choses à moitié et ce
-                                            côté
-                                            excessif et
-                                            ultra motivé que j’ai en moi s’est vite fait remarquer dans mes tout
-                                            début
-                                            en course à
-                                            pied. Débutant par un demi-marathon, la passion est née et depuis, je
-                                            cours
-                                            sans cesse.
-                                            J’aime la course sur route, mais je préfère de loin la course en
-                                            montagne.
-                                            ​
-                                            Pourquoi la course en sentier? Car la seule chose dont j’ai besoin c’est
-                                            d’enfiler mes
-                                            souliers et d’aligner chacun de mes pas tout en appréciant ces beaux
-                                            paysages qui
-                                            défilent. Dans cette simplicité, j’éprouve un sentiment de liberté, le
-                                            sentiment de
-                                            pouvoir tout découvrir. Être seul dans la nature me permet de me
-                                            ressourcer
-                                            et
-                                            d’apprécier le moment présent.
+                                            <p>
+                                                Je ne suis pas le genre de personne à faire les choses à moitié et ce
+                                                côté
+                                                excessif et
+                                                ultra motivé que j’ai en moi s’est vite fait remarquer dans mes tout
+                                                début
+                                                en course à
+                                                pied. Débutant par un demi-marathon, la passion est née et depuis, je
+                                                cours
+                                                sans cesse.
+                                                J’aime la course sur route, mais je préfère de loin la course en
+                                                montagne.
+                                            </p>
+                                            <p>​
+                                                Pourquoi la course en sentier? Car la seule chose dont j’ai besoin c’est
+                                                d’enfiler mes
+                                                souliers et d’aligner chacun de mes pas tout en appréciant ces beaux
+                                                paysages qui
+                                                défilent. Dans cette simplicité, j’éprouve un sentiment de liberté, le
+                                                sentiment de
+                                                pouvoir tout découvrir. Être seul dans la nature me permet de me
+                                                ressourcer
+                                                et
+                                                d’apprécier le moment présent.
+                                            </p>
                                         </Col>
 
 
