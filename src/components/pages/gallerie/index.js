@@ -4,11 +4,27 @@ import styles from './styles';
 import MyFooter from '../../footer';
 import MediaQuery from 'react-responsive';
 import MainMenu from  '../../main-menu';
-import {Layout, Row, Col} from 'antd';
+import Layout from 'antd/lib/layout';
+import Row from 'antd/lib/row';
+import Col from 'antd/lib/col';
+import Spin from 'antd/lib/spin';
 
 const {Header, Footer, Content} = Layout;
 
 class Gallerie extends Component {
+
+    componentWillMount() {
+        this.setState({
+            iframeLoaded: false
+        });
+    }
+
+    onIframeLoaded() {
+        this.setState({
+            iframeLoaded: true
+        });
+    }
+
     render() {
         return (
             <Layout {...styles}>
@@ -22,6 +38,12 @@ class Gallerie extends Component {
                     <div className="gallerie">
                         <Row>
                             <Col span={24}>
+                                {
+                                    !this.state.iframeLoaded &&
+                                    <div className="spinner-wrapper">
+                                        <Spin />
+                                    </div>
+                                }
                                 <MediaQuery query='(max-width: 768px)'>
                                     <iframe
                                         title="small"
@@ -31,9 +53,13 @@ class Gallerie extends Component {
                                         className="lightwidget-widget"
                                         style={{
                                             width: '100%',
+                                            height: this.state.iframeLoaded ? 'inherit' : 0,
+                                            minHeight: this.state.iframeLoaded ? 'inherit' : 0,
                                             border: 0,
                                             overflow: 'hidden'
                                         }}
+                                        onLoad={()=>this.onIframeLoaded()}
+                                        onLoadStart={()=> this.setState({iframeLoaded: false})}
                                     />
                                 </MediaQuery>
                                 <MediaQuery query='(min-width: 769px)'>
@@ -46,10 +72,15 @@ class Gallerie extends Component {
                                         style={{
                                             width: '100%',
                                             border: 0,
-                                            overflow: 'hidden'
+                                            overflow: 'hidden',
+                                            height: this.state.iframeLoaded ? 'inherit' : 0,
+                                            minHeight: this.state.iframeLoaded ? 'inherit' : 0,
                                         }}
+                                        onLoad={()=> this.onIframeLoaded()}
+                                        onLoadStart={()=> this.setState({iframeLoaded: false})}
                                     />
                                 </MediaQuery>
+
                             </Col>
                         </Row>
                     </div>

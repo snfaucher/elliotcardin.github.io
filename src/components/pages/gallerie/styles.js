@@ -10,5 +10,11 @@ export default css({
     '& .gallerie': {
         paddingLeft: '5vw',
         paddingRight: '5vw'
+    },
+    '& .spinner-wrapper': {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        minHeight: '70vh'
     }
 });
