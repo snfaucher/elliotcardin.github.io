@@ -9,6 +9,7 @@ import {Layout, Row, Col} from 'antd';
 const {Header, Footer, Content} = Layout;
 
 class Results extends Component {
+
     render() {
         return (
             <Layout {...styles}>
@@ -23,6 +24,7 @@ class Results extends Component {
                         <Row>
                             <Col span={24}>
                                 <h1>Résultats</h1>
+
                             </Col>
                         </Row>
                     </div>
