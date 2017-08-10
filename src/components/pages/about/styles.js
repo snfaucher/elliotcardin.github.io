@@ -12,6 +12,12 @@ export default css({
         paddingRight: '5vw'
     },
     '& .content': {
+        backgroundImage: `url(/media/background-moutain.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center left',
+        backgroundAttachment: 'fixed',
+        paddingTop: 60,
+        paddingBottom: 240,
         paddingLeft: '30vw',
         paddingRight: '30vw',
         '@media(max-width: 768px)': {
