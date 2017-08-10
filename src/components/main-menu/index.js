@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import style from './style';
 import Menu from 'antd/lib/menu';
+import Modal from 'antd/lib/modal';
 import Icon from 'antd/lib/icon';
-
+import MediaQuery from 'react-responsive';
 const MenuItem = Menu.Item;
 
 
@@ -60,39 +61,50 @@ class MainMenu extends Component {
     }
 
     renderMobile() {
-        const captionClass = `link-caption {${this.props.darkTheme ? 'dark' : ''}`;
+        const captionClass = `link-caption ${this.props.darkTheme ? 'dark' : ''}`;
+        const brandClass = `brand ${this.props.darkTheme ? 'dark' : ''}`;
         return (
             <div {...style}>
 
                 {
                     this.state.mobileMenuOpen &&
+                    <Modal
+                        visible={true}
+                        style={{
+                            top: 0,
+                            height : '100vh',
 
-                    <Menu
-                        className={`menu menu-mobile ${this.props.transparent ? 'transparent' : ''} `}
-                        mode='vertical'
+                        }}
+                        footer={null}
                     >
-                        <MenuItem key="a-propos">
-                            <Link to="/a-propos" style={{textDecoration: 'none'}}>
+
+                        <Menu
+                            className={`menu  menu-mobile ${this.props.fixed ? 'fixed' : ''}`}
+                            mode='vertical'
+                        >
+                            <MenuItem key="a-propos">
+                                <Link to="/a-propos" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         À propos
                                     </span>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem key="gallerie">
-                            <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem key="gallerie">
+                                <Link to="/gallerie" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         Gallerie
                                     </span>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem key="resultats">
-                            <Link to="/resultats" style={{textDecoration: 'none'}}>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem key="resultats">
+                                <Link to="/resultats" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         Résultats
                                     </span>
-                            </Link>
-                        </MenuItem>
-                    </Menu>
+                                </Link>
+                            </MenuItem>
+                        </Menu>
+                    </Modal>
                 }
                 {
                     !this.state.mobileMenuOpen &&
@@ -103,7 +115,7 @@ class MainMenu extends Component {
                     >
                         <MenuItem key="home">
                             <div
-                                className="brand"
+                                className={brandClass}
                                 onClick={()=> this.setState({mobileMenuOpen: true}) }
                             >
                                 <span className={captionClass}>
@@ -118,10 +130,16 @@ class MainMenu extends Component {
     }
 
     render() {
-        return this.renderNonMobile();
-        if (this.state.showMenuMobile) {
-            //return this.renderMobile();
-        }
+        return (
+            <div>
+                <MediaQuery query='(max-width: 768px)'>
+                    {this.renderMobile()}
+                </MediaQuery>
+                <MediaQuery query='(min-width: 769px)'>
+                    {this.renderNonMobile()}
+                </MediaQuery>
+            </div>
+        );
     }
 }
 

@@ -25,6 +25,8 @@ export default css({
         backgroundColor: 'rgba(0,0,0,0)',
     },
     '& .menu-mobile': {
+        height : '100vh',
+        minHeight : '100vh',
         '& .link-caption': {
             fontSize: '1.3em !important'
         }
