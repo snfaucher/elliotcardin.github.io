@@ -8,31 +8,36 @@ export default css({
     alignItems: 'center',
     '& .brand': {
         color: 'whitesmoke',
-        fontSize: '1.2em'
+        fontSize: '1.2em',
     },
     '& .dark.brand': {
-        fontSize: '1.2em',
-        color: 'black'
+        color: 'black',
+        fontSize: '1.4em'
+    },
+    '.brand-wrapper': {
+        paddingLeft: '16px !important'
     },
     '& .dark.link-caption': {
-        color: 'black',
+        color: 'black'
     },
     '& .link-caption': {
-        color: 'whitesmoke',
+        color: 'whitesmoke'
     },
     '& .menu': {
         borderBottomColor: 'rgba(0,0,0,0)',
-        backgroundColor: 'rgba(0,0,0,0)',
+        backgroundColor: 'rgba(0,0,0,0)'
     },
     '& .menu-mobile': {
-        height : '100vh',
-        minHeight : '100vh',
+        height: '100vh',
+        minHeight: '100vh',
         '& .link-caption': {
             fontSize: '1.3em !important'
         }
     },
-    '& .menu-close': {
-        color: 'whitesmoke'
+    '.close-wrapper': {
+        color: 'gray',
+        display: 'flex',
+        justifyContent: 'flex-end'
     },
     '& .transparent': {
         position: 'absolute',

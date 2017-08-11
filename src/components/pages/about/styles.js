@@ -23,6 +23,8 @@ export default css({
         '@media(max-width: 768px)': {
             paddingLeft: 5,
             paddingRight: 5,
+            paddingTop: 0,
+            paddingBottom: '100vh'
         },
         display: 'flex',
         alignItems: 'center',

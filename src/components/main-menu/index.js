@@ -72,38 +72,71 @@ class MainMenu extends Component {
                         visible={true}
                         style={{
                             top: 0,
-                            height : '100vh',
-
+                            height: '100vh'
                         }}
                         footer={null}
-                    >
+                        closable={false}
 
-                        <Menu
-                            className={`menu  menu-mobile ${this.props.fixed ? 'fixed' : ''}`}
-                            mode='vertical'
-                        >
-                            <MenuItem key="a-propos">
-                                <Link to="/a-propos" style={{textDecoration: 'none'}}>
+                    >
+                        <div>
+                            <div className="close-wrapper">
+                                <Icon type="close"
+                                      onClick={()=>this.setState({mobileMenuOpen: false})}
+                                      style={{
+                                          ":hover": {
+                                              cursor: 'pointer'
+                                          }
+                                      }}
+                                />
+                            </div>
+                            <div
+                                className="brand-wrapper"
+                                style={{
+                                    paddingLeft: 16,
+                                    paddingTop: 16
+                                }}
+                            >
+                                <Link to="/"
+                                      style={{
+                                          textDecoration: 'none',
+                                          color: 'black'
+                                      }}
+                                >
+                                    <div className={brandClass}>
+                                        Elliot Cardin
+                                    </div>
+                                </Link>
+                            </div>
+                            <Menu
+                                className={`menu menu-mobile ${this.props.fixed ? 'fixed' : ''}`}
+                                mode='vertical'
+                                style={{
+                                    marginTop: 15
+                                }}
+                            >
+                                <MenuItem key="a-propos">
+                                    <Link to="/a-propos" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         À propos
                                     </span>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem key="gallerie">
-                                <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                                    </Link>
+                                </MenuItem>
+                                <MenuItem key="gallerie">
+                                    <Link to="/gallerie" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         Gallerie
                                     </span>
-                                </Link>
-                            </MenuItem>
-                            <MenuItem key="resultats">
-                                <Link to="/resultats" style={{textDecoration: 'none'}}>
+                                    </Link>
+                                </MenuItem>
+                                <MenuItem key="resultats">
+                                    <Link to="/resultats" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
                                         Résultats
                                     </span>
-                                </Link>
-                            </MenuItem>
-                        </Menu>
+                                    </Link>
+                                </MenuItem>
+                            </Menu>
+                        </div>
                     </Modal>
                 }
                 {
