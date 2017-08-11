@@ -19,9 +19,13 @@ export default css({
         justifyContent: 'center',
         paddingTop: 60,
         paddingBottom: 60,
+        '@media (max-width: 768px)': {
+            paddingTop: '50vh',
+            paddingBottom: '50vh',
+        }
     },
     '& .year-result': {
-        marginBottom : 60
+        marginBottom: 60
     },
     '& .results-list-wrapper': {
         backgroundColor: 'whitesmoke !important',
