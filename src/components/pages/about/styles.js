@@ -1,7 +1,6 @@
 import {css} from 'glamor';
 
 export default css({
-    //backgroundColor: '#9E9E9E !important',
     backgroundColor: 'whitesmoke !important',
     '& .header': {
         width: '100%',
@@ -18,15 +17,16 @@ export default css({
     '& .content': {
         backgroundImage: `url(/media/background-moutain.jpg)`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center left',
+        backgroundPosition: 'center center',
         backgroundAttachment: 'fixed',
         paddingTop: 60,
         paddingBottom: 240,
         paddingLeft: '30vw',
         paddingRight: '30vw',
         '@media(max-width: 768px)': {
-            paddingLeft: 5,
-            paddingRight: 5,
+            backgroundPosition: 'center center',
+            paddingLeft: 0,
+            paddingRight: 0,
             paddingTop: 0,
             paddingBottom: '100vh'
         },
@@ -37,7 +37,10 @@ export default css({
     '& .cover': {
         backgroundImage: `url(/media/elliotcardin.jpg)`,
         backgroundSize: 'cover',
-        height: '50vh'
+        height: '50vh',
+        '@media(max-width: 768px) and (orientation:landscape)': {
+            height: '100vh'
+        }
     },
     '& .description': {
         paddingTop: 30,
