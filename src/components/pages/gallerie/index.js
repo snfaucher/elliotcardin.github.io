@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import styles from './styles';
 import MyFooter from '../../footer';
-import MediaQuery from 'react-responsive';
 import MainMenu from  '../../main-menu';
 import Layout from 'antd/lib/layout';
 import Row from 'antd/lib/row';
@@ -44,47 +43,26 @@ class Gallerie extends Component {
                                         <Spin />
                                     </div>
                                 }
-                                <MediaQuery query='(max-width: 768px)'>
-                                    <iframe
-                                        title="small"
-                                        src="//lightwidget.com/widgets/9e8d83f6311659c9a7c4d0641fe00115.html"
-                                        scrolling="no"
-                                        allowTransparency="true"
-                                        className="lightwidget-widget"
-                                        style={{
-                                            width: '100%',
-                                            height: this.state.iframeLoaded ? 'inherit' : 0,
-                                            minHeight: this.state.iframeLoaded ? 'inherit' : 0,
-                                            border: 0,
-                                            overflow: 'hidden'
-                                        }}
-                                        onLoad={()=>this.onIframeLoaded()}
-                                        onLoadStart={()=> this.setState({iframeLoaded: false})}
-                                    />
-                                </MediaQuery>
-                                <MediaQuery query='(min-width: 769px)'>
-                                    <iframe
-                                        title="default"
-                                        src="//lightwidget.com/widgets/dbe3809fc675576089ae5b45bf45bfe6.html"
-                                        scrolling="no"
-                                        allowTransparency="true"
-                                        className="lightwidget-widget"
-                                        style={{
-                                            width: '100%',
-                                            border: 0,
-                                            overflow: 'hidden',
-                                            height: this.state.iframeLoaded ? 'inherit' : 0,
-                                            minHeight: this.state.iframeLoaded ? 'inherit' : 0,
-                                        }}
-                                        onLoad={()=> this.onIframeLoaded()}
-                                        onLoadStart={()=> this.setState({iframeLoaded: false})}
-                                    />
-                                </MediaQuery>
 
+                                <iframe
+                                    title="default"
+                                    src="//lightwidget.com/widgets/dbe3809fc675576089ae5b45bf45bfe6.html"
+                                    scrolling="no"
+                                    allowTransparency="true"
+                                    className="lightwidget-widget"
+                                    style={{
+                                        width: '100%',
+                                        border: 0,
+                                        overflow: 'hidden',
+                                        height: this.state.iframeLoaded ? 'inherit' : 0,
+                                        minHeight: this.state.iframeLoaded ? 'inherit' : 0,
+                                    }}
+                                    onLoad={()=> this.onIframeLoaded()}
+                                    onLoadStart={()=> this.setState({iframeLoaded: false})}
+                                />
                             </Col>
                         </Row>
                     </div>
-
                 </Content>
                 <Footer>
                     <div className="home__footer">
