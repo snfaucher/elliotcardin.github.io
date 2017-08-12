@@ -17,7 +17,7 @@ export default css({
     '& .results': {
         backgroundImage: `url(/media/trail.jpg)`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center left',
+        backgroundPosition: 'center right',
         backgroundAttachment: 'fixed',
         display: 'flex',
         justifyContent: 'center',
