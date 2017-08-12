@@ -8,7 +8,7 @@ export default css({
     alignItems: 'center',
     '& .brand': {
         color: 'whitesmoke',
-        fontSize: '1.2em',
+        fontSize: '1.2em'
     },
     '& .dark.brand': {
         color: 'black',

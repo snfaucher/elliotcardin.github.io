@@ -6,7 +6,11 @@ export default css({
     '& .header': {
         position: 'absolute',
         width: '100%',
-        backgroundColor: 'rgba(0,0,0,0)'
+        backgroundColor: 'rgba(0,0,0,0)',
+        paddingLeft: 15,
+        '@media(max-width: 768px)': {
+            paddingTop: 10
+        },
     },
     '& .home': {
         height: '100vh',

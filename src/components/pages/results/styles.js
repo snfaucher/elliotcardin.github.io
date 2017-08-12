@@ -4,7 +4,11 @@ export default css({
 
     '& .header': {
         width: '100%',
-        backgroundColor: 'rgba(0,0,0,0)'
+        backgroundColor: 'rgba(0,0,0,0)',
+        paddingLeft: 15,
+        '@media(max-width: 768px)': {
+            paddingTop: 10
+        },
     },
     '& .gallerie': {
         paddingLeft: '5vw',

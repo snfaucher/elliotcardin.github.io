@@ -5,7 +5,11 @@ export default css({
     backgroundColor: 'whitesmoke !important',
     '& .header': {
         width: '100%',
-        backgroundColor: 'rgba(0,0,0,0)'
+        backgroundColor: 'rgba(0,0,0,0)',
+        paddingLeft: 15,
+        '@media(max-width: 768px)': {
+            paddingTop: 10
+        },
     },
     '& .gallerie': {
         paddingLeft: '5vw',
@@ -40,6 +44,7 @@ export default css({
         paddingLeft: 15,
         paddingRight: 15,
         paddingBottom: 15,
-        lineHeight: '2em'
+        lineHeight: '2em',
+        textAlign: 'justify'
     }
 });

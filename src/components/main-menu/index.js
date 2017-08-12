@@ -143,7 +143,7 @@ class MainMenu extends Component {
                     !this.state.mobileMenuOpen &&
 
                     <Menu
-                        className={`menu ${this.props.transparent ? 'transparent' : ''}`}
+                        className={`menu`}
                         mode='horizontal'
                     >
                         <MenuItem key="home">
