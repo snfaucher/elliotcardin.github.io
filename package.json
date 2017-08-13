@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^2.12.6",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-responsive": "^1.x",
-    "antd": "2.12.3"
+    "react-responsive": "^1.x"
   },
   "devDependencies": {
     "glamor": "^2.20.25",
@@ -14,16 +14,25 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.6",
-    "react-snapshot": "^1.1.0"
+    "react-snapshot": "^2.0.0-1"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive --poll",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "build": "react-scripts build && react-snapshot",
+    "test": "react-scripts test ",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "reactSnapshot": {
+    "include": [
+      "/a-propos",
+      "/gallerie",
+      "/resultats",
+      "/"
+    ],
+    "snapshotDelay": 300
   }
 }
