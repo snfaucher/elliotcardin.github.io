@@ -29,7 +29,7 @@
   "reactSnapshot": {
     "include": [
       "/a-propos",
-      "/gallerie",
+      "/galerie",
       "/resultats",
       "/"
     ],

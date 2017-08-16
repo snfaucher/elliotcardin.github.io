@@ -16,9 +16,8 @@ export default css({
         height: '100vh',
         backgroundSize: 'cover',
         color: 'whitesmoke',
-        backgroundImage: `url("${backgroundImage}")`,
         '@media(max-width: 768px)': {
-            backgroundImage: `url("${backgroundImageMobile}")`,
+            backgroundImage: `url(/media/running-wood-mobile.jpg)`,
         },
         '& .caption': {
             position: 'relative',
@@ -29,8 +28,7 @@ export default css({
                 color: 'white !important',
                 marginTop: 0
             }
-        },
-
+        }
     },
     '& .home__footer': {
         textAlign: 'center',

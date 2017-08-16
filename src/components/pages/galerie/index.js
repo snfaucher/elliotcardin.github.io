@@ -10,7 +10,7 @@ import Spin from 'antd/lib/spin';
 
 const {Header, Footer, Content} = Layout;
 
-class Gallerie extends Component {
+class Galerie extends Component {
 
     componentWillMount() {
         this.setState({
@@ -34,7 +34,7 @@ class Gallerie extends Component {
                     />
                 </Header>
                 <Content>
-                    <div className="gallerie">
+                    <div className="galerie">
                         <Row>
                             <Col span={24}>
                                 {
@@ -76,4 +76,4 @@ class Gallerie extends Component {
     }
 }
 
-export default Gallerie;
+export default Galerie;

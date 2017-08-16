@@ -40,10 +40,10 @@ class MainMenu extends Component {
                                     </span>
                         </Link>
                     </MenuItem>
-                    <MenuItem key="gallerie">
-                        <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                    <MenuItem key="galerie">
+                        <Link to="/galerie" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
-                                        Gallerie
+                                        Galerie
                                     </span>
                         </Link>
                     </MenuItem>
@@ -121,10 +121,10 @@ class MainMenu extends Component {
                                     </span>
                                     </Link>
                                 </MenuItem>
-                                <MenuItem key="gallerie">
-                                    <Link to="/gallerie" style={{textDecoration: 'none'}}>
+                                <MenuItem key="galerie">
+                                    <Link to="/galerie" style={{textDecoration: 'none'}}>
                                     <span className={captionClass}>
-                                        Gallerie
+                                        Galerie
                                     </span>
                                     </Link>
                                 </MenuItem>

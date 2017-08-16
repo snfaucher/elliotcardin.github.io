@@ -10,7 +10,7 @@ export default css({
             paddingTop: 10
         },
     },
-    '& .gallerie': {
+    '& .galerie': {
         paddingLeft: '5vw',
         paddingRight: '5vw'
     },
