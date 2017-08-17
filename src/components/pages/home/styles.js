@@ -32,8 +32,7 @@ export default css({
         textAlign: 'center',
     },
     '& a': {
-        color: 'white',
-        fontSize: '0.8em'
+        color: 'white'
     }
 
 });

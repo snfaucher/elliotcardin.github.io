@@ -8,7 +8,11 @@ export default css({
     alignItems: 'center',
     '& .brand': {
         color: 'whitesmoke',
-        fontSize: '1.2em'
+        fontSize: '1.2em',
+        display: 'flex'
+    },
+    '& .social-img-dark': {
+        filter: 'invert(40%)'
     },
     '& .dark.brand': {
         color: 'black',
@@ -44,8 +48,31 @@ export default css({
         top: 0,
         left: 0,
         zIndex: 100,
-        //width: '100%',
         backgroundColor: 'rgba(0,0,0,0)',
-        borderBottomColor: 'rgba(0,0,0,0)',
+        borderBottomColor: 'rgba(0,0,0,0)'
+    },
+    '& .social-mobile': {
+        position: 'fixed',
+        right: 15,
+        top: 15
+    },
+    '& .left-part': {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    '& .social': {
+        marginLeft: 15,
+        display: 'flex',
+        flexDirection: 'row',
+        '& .item': {
+            display: 'flex',
+            marginRight: 10,
+            "& img": {
+                display: 'flex',
+                alignItems: 'center',
+                width: 30,
+                height: 30
+            }
+        }
     }
 });
