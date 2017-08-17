@@ -49,7 +49,7 @@ export default css({
         textAlign: 'justify'
     },
     '& .sponsors-wrapper': {
-        marginTop: 60,
+        marginTop: 30 * 6,
         '& .list': {
             display: 'flex',
             alignItems  : 'center',
