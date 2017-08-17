@@ -8,7 +8,7 @@ export default css({
         paddingLeft: 15,
         '@media(max-width: 768px)': {
             paddingTop: 10
-        },
+        }
     },
     '& .galerie': {
         paddingLeft: '5vw',
@@ -30,8 +30,6 @@ export default css({
             paddingTop: 0,
             paddingBottom: '100vh'
         },
-        display: 'flex',
-        alignItems: 'center',
         minHeight: '70vh'
     },
     '& .cover': {
@@ -49,5 +47,29 @@ export default css({
         paddingBottom: 15,
         lineHeight: '2em',
         textAlign: 'justify'
+    },
+    '& .sponsors-wrapper': {
+        marginTop: 60,
+        '& .list': {
+            display: 'flex',
+            alignItems  : 'center',
+            flexDirection : 'column',
+            '& .item': {
+                display: 'flex',
+                alignItems  : 'center',
+                flexDirection : 'column',
+                maxWidth : 200,
+                marginTop : 50,
+                '& .caption': {
+                    fontSize: '1.5em',
+                    paddingTop : 15
+                },
+                '& img': {
+                    width: '100%',
+                    height: 'auto'
+                }
+            }
+        }
+
     }
 });
