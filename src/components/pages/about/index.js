@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import styles from './styles';
 import MyFooter from '../../footer';
-import MediaQuery from 'react-responsive';
 import MainMenu from '../../main-menu';
-import {Layout, Row, Col, Card} from 'antd';
+import Layout from 'antd/lib/layout';
+import Row  from 'antd/lib/row';
+import Col  from 'antd/lib/col';
+import Card  from 'antd/lib/card';
 
 const {Header, Footer, Content} = Layout;
 

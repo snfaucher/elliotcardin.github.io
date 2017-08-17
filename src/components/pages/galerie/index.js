@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import styles from './styles';
 import MyFooter from '../../footer';
 import MainMenu from  '../../main-menu';

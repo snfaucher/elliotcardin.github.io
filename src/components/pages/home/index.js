@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './styles';
 import MyFooter from '../../footer';
-import MediaQuery from 'react-responsive';
 import MainMenu from '../../main-menu';
-import { Layout } from 'antd';
+import Layout from 'antd/lib/layout';
 
 const { Header, Footer, Content } = Layout;
 
