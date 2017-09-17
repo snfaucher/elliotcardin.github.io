@@ -16,6 +16,7 @@ export default css({
         color: 'whitesmoke',
         '@media(max-width: 768px)': {
             backgroundImage: `url(/media/running-wood-mobile.jpg)`,
+            backgroundPosition: '-80%'
         },
         '& .caption': {
             position: 'relative',

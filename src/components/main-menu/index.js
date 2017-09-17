@@ -93,6 +93,17 @@ class MainMenu extends Component {
                             </span>
                         </Link>
                     </MenuItem>
+                    <MenuItem key="blog">
+                        <Link
+                            to="/trans-vallee-2017"
+                            style={{
+                            textDecoration: 'none'
+                        }}>
+                            <span className={captionClass}>
+                                Blog
+                            </span>
+                        </Link>
+                    </MenuItem>
                 </Menu>
             </div>
         );
@@ -188,10 +199,21 @@ class MainMenu extends Component {
                                     </span>
                                 </Link>
                             </MenuItem>
+                            <MenuItem key="blog">
+                                <Link
+                                    to="/trans-vallee-2017"
+                                    style={{
+                                    textDecoration: 'none'
+                                }}>
+                                    <span className={captionClass}>
+                                        Blog
+                                    </span>
+                                </Link>
+                            </MenuItem>
                         </Menu>
                     </div>
                 </Modal>
-}
+                }
 
                 {!this.state.mobileMenuOpen && <div>
                     <Menu className={`menu`} mode='horizontal'>
