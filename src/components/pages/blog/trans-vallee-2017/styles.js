@@ -35,7 +35,14 @@ export default css({
         '& .description': {
             marginTop: 30,
             fontSize: '1.2em',
-            textAlign: 'center',
+            textAlign: 'center'
+        },
+        '& .social': {
+            display: 'flex',
+            '& >div': {
+                marginRight: 15
+            }
+
         }
     },
     '& .story': {

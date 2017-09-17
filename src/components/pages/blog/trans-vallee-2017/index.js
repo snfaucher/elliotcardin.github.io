@@ -7,10 +7,13 @@ import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import Card from 'antd/lib/card';
 import data, {results} from './data';
+import Like from '../../../fb/like';
+import Share from '../../../fb/share';
 
 const {Header, Footer, Content} = Layout;
 
 class TransVallee extends Component {
+
 
     render() {
         return (
@@ -47,6 +50,11 @@ class TransVallee extends Component {
                                     })
                                 }
                             </div>
+                            <div className="social">
+                                <Like />
+                                <Share />
+                            </div>
+
                         </Col>
                         <Col
                             className="jumbotron"
