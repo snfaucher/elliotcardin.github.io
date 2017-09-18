@@ -20,11 +20,11 @@ class Home extends Component {
                     <meta charset="utf-8"/>
                     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                    <!-- Control the behavior of search engine crawling and indexing -->
+                    
                     <meta name="robots" content="index,follow"/>
-                    <!-- All Search Engines -->
+                    
                     <meta name="googlebot" content="index,follow"/>
-                    <!-- Google Specific -->
+                    
                     <link rel="canonical" href={pageUrl}/>
                     <meta name="description" content={description}/>
 
