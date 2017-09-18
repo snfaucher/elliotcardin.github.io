@@ -34,15 +34,15 @@ const results = [
     },
     {
         id: 2,
-        caption: 'Trans-Vallée 21K 10ie - 2:17:05'
+        caption: '10K 5ie - 54:08'
     },
     {
         id: 3,
-        caption: 'Trans-Vallée 38K 4ie - 4:22:12'
+        caption: '38K 4ie - 4:22:12'
     },
     {
         id: 4,
-        caption: 'Trans-Vallée 10K 5ie - 54:08'
+        caption: '21K 10ie - 2:17:05'
     }
 
 ];

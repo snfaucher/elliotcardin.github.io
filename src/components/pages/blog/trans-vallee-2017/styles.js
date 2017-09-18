@@ -28,9 +28,14 @@ export default css({
             }
         },
         '& .results': {
+            textAlign: 'center',
             fontSize: '1.2em',
             marginTop: 30,
-            marginBottom: 30
+            marginBottom: 30,
+            '& .first': {
+                marginBottom: 30
+            }
+
         },
         '& .description': {
             marginTop: 30,

@@ -29,11 +29,11 @@ class TransVallee extends Component {
                     <meta charset="utf-8"/>
                     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                    
+
                     <meta name="robots" content="index,follow"/>
-                    
+
                     <meta name="googlebot" content="index,follow"/>
-                    
+
                     <link rel="canonical" href={pageUrl}/>
                     <meta name="description" content={description}/>
 
@@ -61,7 +61,8 @@ class TransVallee extends Component {
                             <div className="main">Victoire au Trans-Vallée 2017</div>
 
                             <div className="description">
-                                Une course à étapes se déroulant sur 3 jours comprenant le 10k de nuit, le 38k et le 21k.
+                                Une course à étapes se déroulant sur 3 jours comprenant le 10k de nuit, le 38k et le
+                                21k.
                                 Bref, c'est une ambiance 100% trail réunissants les coureurs sur un site de camping en
                                 bordure de la rivière du bras du nord et les montagnes.
                             </div>
@@ -70,7 +71,7 @@ class TransVallee extends Component {
                                     results.map(result => {
                                         const {id, caption} = result;
                                         return (
-                                            <div key={id}>
+                                            <div key={id} className={ id === 1 ? 'first' :''}>
                                                 {caption}
                                             </div>
                                         );
