@@ -6,6 +6,7 @@
     "antd": "^2.12.6",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-helmet": "^5.2.0",
     "react-responsive": "^1.x"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
       "/a-propos",
       "/galerie",
       "/resultats",
+      "/trans-vallee-2017",
       "/"
     ],
     "snapshotDelay": 300

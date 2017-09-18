@@ -9,6 +9,8 @@ import Card from 'antd/lib/card';
 import data, {results} from './data';
 import Like from '../../../fb/like';
 import Share from '../../../fb/share';
+import {Helmet} from "react-helmet";
+
 
 const {Header, Footer, Content} = Layout;
 
@@ -16,8 +18,33 @@ class TransVallee extends Component {
 
 
     render() {
+        const title = `Victoire au Trans-Vallée 2017 - Elliot Cardin`;
+        const description = `Une course à étape se déroulant sur 3 jours comprenant le 10k de nuit, le 38k et le 21k. Bref, c'est une ambiance 100% trail réunissants les coureurs sur un site de camping en bordure de la rivière du bras du nord et les montagnes.`;
+        const pageUrl = `http://elliotcardin.com/trans-vallee-2017`;
+
         return (
             <Layout {...styles}>
+                <Helmet>
+                    <title>{title}</title>
+                    <meta charset="utf-8"/>
+                    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+                    <!-- Control the behavior of search engine crawling and indexing -->
+                    <meta name="robots" content="index,follow"/>
+                    <!-- All Search Engines -->
+                    <meta name="googlebot" content="index,follow"/>
+                    <!-- Google Specific -->
+                    <link rel="canonical" href={pageUrl}/>
+                    <meta name="description" content={description}/>
+
+                    <meta property="og:url" content={pageUrl}/>
+                    <meta property="og:type" content="website"/>
+                    <meta property="og:title" content={title}/>
+                    <meta property="og:image" content="http://elliotcardin.com/media/podium.jpg"/>
+                    <meta property="og:description" content={description}/>
+                    <meta property="og:site_name" content='Elliot Cardin'/>
+                    <meta property="og:locale" content='fr'/>
+                </Helmet>
                 <Header className="header">
                     <MainMenu
                         fixed={false}
@@ -84,7 +111,7 @@ class TransVallee extends Component {
                                                 <div className="item">
                                                     <div
                                                         className="cover"
-                                                        style={{backgroundImage : `url(${image}`}}
+                                                        style={{backgroundImage : `url(${image})`}}
                                                     ></div>
                                                     <div className="content">
                                                         {content}
