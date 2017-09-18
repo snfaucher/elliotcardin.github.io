@@ -17,8 +17,8 @@ const data = [
     },
     {
         eventName : "Bear Mountain",
-        time: "41:42",
-        position : "3e place",
+        time: "7:34:00",
+        position : "2e place",
         distance  : '10',
         date : '2017-04-17',
         city  : "New York, New York"
@@ -106,7 +106,7 @@ const data = [
     },
     {
         eventName : 'Demi-marathon de Sherbrooke',
-        time : "1:22:58",
+        time : "1:22:02",
         position  :'15e place',
         distance : '21.1',
         date  : '2016-06-30',
