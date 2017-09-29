@@ -27,7 +27,7 @@ class About extends Component {
                     <meta name="robots" content="index,follow"/>
 
                     <meta name="googlebot" content="index,follow"/>
-                    
+
                     <link rel="canonical" href={pageUrl}/>
                     <meta name="description" content={description}/>
 
@@ -85,24 +85,35 @@ class About extends Component {
                                     <Card>
                                         <div className="list">
                                             <div className="item">
-                                                <img src="/media/move.png" alt=''/>
+                                                <img src="/media/salomon.png" alt='Salomon '/>
+                                                <div className="caption">
+                                                    <a href='https://www.salomon.com/caus/'>Salomon Québec</a>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <img src="/media/move.png" alt='Move protein'/>
                                                 <div className="caption">
                                                     <a href='https://moveprotein.com/'>Move protein</a>
                                                 </div>
                                             </div>
                                             <div className="item">
-                                                <img src="/media/coursecie.jpg" alt=''/>
+                                                <img src="/media/coursecie.jpg" alt='Course & Cie'/>
                                                 <div className="caption">
                                                     <a href='https://course-cie.com/'>Course & Cie</a>
                                                 </div>
                                             </div>
                                             <div className="item">
-                                                <img src="/media/brix.jpg" alt=''/>
+                                                <img src="/media/brix.jpg" alt='Brix Érable'/>
                                                 <div className="caption">
                                                     <a href='http://brixalerable.ca/'>Brix Érable</a>
                                                 </div>
                                             </div>
-
+                                            <div className="item">
+                                                <img src="/media/spa-bolton.png" alt='Spa Bolton'/>
+                                                <div className="caption">
+                                                    <a href='https://www.spabolton.com/'>Spa Bolton</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </Card>
                                 </div>

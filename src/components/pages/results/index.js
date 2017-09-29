@@ -24,6 +24,7 @@ class Results extends Component {
     renderList(list) {
         return list.map(d => {
             const {eventName, position, id, time, city, distance, date} = d;
+            const actualDistance = _.isFunction(distance) ? distance() : `${distance}km`;
             return (
                 <div
                     key={id}
@@ -34,7 +35,7 @@ class Results extends Component {
                         <h2>{eventName}</h2>
                         {
                             !!position &&
-                            <div>{position} - {distance}km - {time}</div>
+                            <div>{position} - {actualDistance} - {time}</div>
                         }
                         {
                             !position &&
@@ -75,11 +76,11 @@ class Results extends Component {
                     <meta charset="utf-8"/>
                     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-                    
+
                     <meta name="robots" content="index,follow"/>
-                    
+
                     <meta name="googlebot" content="index,follow"/>
-                    
+
                     <link rel="canonical" href={pageUrl}/>
                     <meta name="description" content={description}/>
 

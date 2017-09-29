@@ -22,7 +22,7 @@ const data = [
     {
         id: 5,
         image: '/media/podium.jpg',
-        content: `Après 3 jours de course, beaucoup de tapping et de glace, je suis heureux grimpé sur la première marche du podium Trans-Vallée! 69k et 7h33 à endurer la douleur, c'est maintenant le temps de prendre du repos. Next one, Bromont Ultra 55k le 8 octobre 2017.`
+        content: `Après 3 jours de course, beaucoup de tapping et de glace, je suis heureux de grimper sur la première marche du podium Trans-Vallée! 69k et 7h33 à endurer la douleur, c'est maintenant le temps de prendre du repos. Next one, Bromont Ultra 55k le 8 octobre 2017.`
     }
 ];
 
