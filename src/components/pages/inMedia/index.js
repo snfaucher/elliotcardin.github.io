@@ -1,26 +1,25 @@
 import React, {Component} from 'react';
-import _ from 'lodash';
 import styles from './styles';
 import MyFooter from '../../footer';
-import MainMenu from  '../../main-menu';
-import Layout  from 'antd/lib/layout';
+import _ from 'lodash';
+import MainMenu from '../../main-menu';
+import Layout from 'antd/lib/layout';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
 import {Helmet} from "react-helmet";
-import {posts} from './data';
-import PostItem from './post-item';
+import StackGrid from "react-stack-grid";
+import {articles} from './data';
+import ArticleItem from './article-item';
 
 
 const {Header, Footer, Content} = Layout;
 
-class Blog extends Component {
-
+class InMedia extends Component {
 
     render() {
-        const title = `Blog - Elliot Cardin`;
-        const description = `Blog - Elliot Cardin`;
-        const pageUrl = `http://elliotcardin.com/blog`;
-
+        const title = `Elliot Cardin - Dans les médias`;
+        const description = `Ultra-trail, course d'endurance, végétalien.`;
+        const pageUrl = `http://elliotcardin.com/in-media`;
         return (
             <Layout {...styles}>
                 <Helmet>
@@ -52,13 +51,15 @@ class Blog extends Component {
                 </Header>
                 <Content>
                     <Row className="page-content">
-                        <Col xs={12} offset={6}>
-                            <div className="blogCover" style={{backgroundImage:`url(/elliot-upclose.jpg)`}}>
-                                <div className="caption">Blog</div>
-                            </div>
-                            {
-                                _.map(posts, post => <PostItem post={post}/>)
-                            }
+                        <Col xs={18} offset={3}>
+                            <StackGrid
+                                columnWidth={300}
+                                gutterWidth={10}
+                            >
+                                {
+                                    _.map(articles, article=> <ArticleItem article={article}/>)
+                                }
+                            </StackGrid>
                         </Col>
                     </Row>
                 </Content>
@@ -73,4 +74,4 @@ class Blog extends Component {
     }
 }
 
-export default Blog;
+export default InMedia;
