@@ -13,7 +13,7 @@ const {Header, Footer, Content} = Layout;
 class About extends Component {
 
     render() {
-        const title = `À propose - Elliot Cardin`;
+        const title = `À propos - Elliot Cardin`;
         const description = title;
         const pageUrl = `http://elliotcardin.com/a-propos`;
         return (

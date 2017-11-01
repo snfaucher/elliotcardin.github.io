@@ -95,7 +95,7 @@ class MainMenu extends Component {
                     </MenuItem>
                     <MenuItem key="blog">
                         <Link
-                            to="/trans-vallee-2017"
+                            to="/blog"
                             style={{
                             textDecoration: 'none'
                         }}>
@@ -201,7 +201,7 @@ class MainMenu extends Component {
                             </MenuItem>
                             <MenuItem key="blog">
                                 <Link
-                                    to="/trans-vallee-2017"
+                                    to="/blog"
                                     style={{
                                     textDecoration: 'none'
                                 }}>

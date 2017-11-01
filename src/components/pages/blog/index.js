@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
+import _ from 'lodash';
 import styles from './styles';
 import MyFooter from '../../footer';
 import MainMenu from  '../../main-menu';
-import Layout from 'antd/lib/layout';
+import Layout  from 'antd/lib/layout';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
-import Spin from 'antd/lib/spin';
+import Card from 'antd/lib/card';
 import {Helmet} from "react-helmet";
+import {posts} from './data';
+import PostItem from './post-item';
+
 
 const {Header, Footer, Content} = Layout;
 
-class Galerie extends Component {
+class Blog extends Component {
 
 
     render() {
-        const title = `Galerie photos - Elliot Cardin`;
-        const description = title;
-        const pageUrl = `http://elliotcardin.com/galerie`;
+        const title = `Blog - Elliot Cardin`;
+        const description = `Blog - Elliot Cardin`;
+        const pageUrl = `http://elliotcardin.com/blog`;
 
         return (
             <Layout {...styles}>
@@ -48,31 +52,21 @@ class Galerie extends Component {
                     />
                 </Header>
                 <Content>
-                    <div className="galerie">
-                        <Row>
-                            <Col span={24}>
-                                <iframe
-                                    id='instaFeed'
-                                    title='instaFeed'
-                                    src='https://www.juicer.io/api/feeds/elliotcardin/iframe'
-                                    frameBorder='0'
-                                    scrolling="yes"
-                                    allowTransparency="true"
-                                    style={{
-                                        width: '100%',
-                                        minHeight : '100vh',
-                                        border: 0
-                                    }}
-                                ></iframe>
-                            </Col>
-                        </Row>
-                    </div>
+                    <Row className="page-content">
+                        <Col xs={12} offset={6}>
+                            <div className="blogCover" style={{backgroundImage:`url(/elliot-upclose.jpg)`}}>
+                                <div className="caption">Blog</div>
+                            </div>
+                            {
+                                _.map(posts, post => <PostItem post={post}/>)
+                            }
+                        </Col>
+                    </Row>
                 </Content>
                 <Footer>
                     <div className="home__footer">
                         <MyFooter/>
                     </div>
-
                 </Footer>
             </Layout>
 
@@ -80,4 +74,4 @@ class Galerie extends Component {
     }
 }
 
-export default Galerie;
+export default Blog;
