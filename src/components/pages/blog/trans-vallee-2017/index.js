@@ -20,7 +20,7 @@ class TransVallee extends Component {
     render() {
         const title = `Victoire au Trans-Vallée 2017 - Elliot Cardin`;
         const description = `Une course à étapes se déroulant sur 3 jours comprenant le 10k de nuit, le 38k et le 21k. Bref, c'est une ambiance 100% trail réunissants les coureurs sur un site de camping en bordure de la rivière du bras du nord et les montagnes.`;
-        const pageUrl = `http://elliotcardin.com/trans-vallee-2017`;
+        const pageUrl = `http://elliotcardin.com/blog/trans-vallee-2017`;
 
         return (
             <Layout {...styles}>
