@@ -13,8 +13,8 @@ export default css({
     },
     '& .content': {
         display: 'flex',
-        alignItems: 'center',
-        padding: '15px'
+        padding: '15px',
+        flexDirection: 'column'
     },
     '& .title': {
         fontSize: '2em',

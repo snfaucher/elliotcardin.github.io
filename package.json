@@ -33,7 +33,10 @@
       "/a-propos",
       "/galerie",
       "/resultats",
-      "/trans-vallee-2017",
+      "/blog/trans-vallee-2017",
+      "/blog/bromont-ultra-2017",
+      "/blog",
+      "/media",
       "/"
     ],
     "snapshotDelay": 300

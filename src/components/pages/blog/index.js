@@ -19,7 +19,7 @@ class Blog extends Component {
     render() {
         const title = `Blog - Elliot Cardin`;
         const description = `Blog - Elliot Cardin`;
-        const pageUrl = `http://elliotcardin.com/blog`;
+        const pageUrl = `https://elliotcardin.com/blog`;
 
         return (
             <Layout {...styles}>
@@ -39,7 +39,7 @@ class Blog extends Component {
                     <meta property="og:url" content={pageUrl}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:title" content={title}/>
-                    <meta property="og:image" content="http://elliotcardin.com/elliot-upclose.jpg"/>
+                    <meta property="og:image" content="https://elliotcardin.com/elliot-upclose.jpg"/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content='Elliot Cardin'/>
                     <meta property="og:locale" content='fr'/>

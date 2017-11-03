@@ -11,6 +11,7 @@ import StackGrid from "react-stack-grid";
 import {articles} from './data';
 import ArticleItem from './article-item';
 
+const data = _.reverse(_.sortBy(articles, 'date'));
 
 const {Header, Footer, Content} = Layout;
 
@@ -19,7 +20,7 @@ class InMedia extends Component {
     render() {
         const title = `Elliot Cardin - Dans les médias`;
         const description = `Ultra-trail, course d'endurance, végétalien.`;
-        const pageUrl = `http://elliotcardin.com/in-media`;
+        const pageUrl = `https://elliotcardin.com/in-media`;
         return (
             <Layout {...styles}>
                 <Helmet>
@@ -38,7 +39,7 @@ class InMedia extends Component {
                     <meta property="og:url" content={pageUrl}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:title" content={title}/>
-                    <meta property="og:image" content="http://elliotcardin.com/elliot-upclose.jpg"/>
+                    <meta property="og:image" content="https://elliotcardin.com/elliot-upclose.jpg"/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content='Elliot Cardin'/>
                     <meta property="og:locale" content='fr'/>
@@ -55,9 +56,10 @@ class InMedia extends Component {
                             <StackGrid
                                 columnWidth={300}
                                 gutterWidth={10}
+                                gutterHeight={10}
                             >
                                 {
-                                    _.map(articles, article=> <ArticleItem article={article}/>)
+                                    _.map(data, article=> <ArticleItem article={article}/>)
                                 }
                             </StackGrid>
                         </Col>

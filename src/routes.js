@@ -6,7 +6,6 @@ import About from './components/pages/about';
 import Results from './components/pages/results';
 import TransVallee2017 from './components/pages/blog/trans-vallee-2017';
 import BromontUltra2017 from './components/pages/blog/bromont-ultra-2017';
-
 import Blog from './components/pages/blog';
 import InMedia from './components/pages/inMedia';
 import NotFound from './NotFound';

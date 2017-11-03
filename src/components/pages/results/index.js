@@ -67,7 +67,7 @@ class Results extends Component {
     render() {
         const title = `Résultats - Elliot Cardin`;
         const description = `Résultats de courses de la saison actuelle et passées.`;
-        const pageUrl = `http://elliotcardin.com/resultats`;
+        const pageUrl = `https://elliotcardin.com/resultats`;
 
         return (
             <Layout {...styles}>
@@ -87,7 +87,7 @@ class Results extends Component {
                     <meta property="og:url" content={pageUrl}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:title" content={title}/>
-                    <meta property="og:image" content="http://elliotcardin.com/media/podium.jpg"/>
+                    <meta property="og:image" content="https://elliotcardin.com/media/podium.jpg"/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content='Elliot Cardin'/>
                     <meta property="og:locale" content='fr'/>

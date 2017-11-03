@@ -8,5 +8,9 @@ export default css({
         '@media(max-width: 768px)': {
             paddingTop: 10
         }
-    },  
+    },
+    '& .page-content' : {
+        marginTop : 60,
+        marginBottom: 60
+    }
 });

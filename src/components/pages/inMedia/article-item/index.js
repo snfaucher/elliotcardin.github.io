@@ -9,15 +9,18 @@ class ArticleItem extends Component {
 
     render() {
         const {article} = this.props;
-        const {id, title, url, cover, publisher} = article;
+        const {title, url, cover, publisher, date} = article;
 
         return (
             <div key={article} {...styles}>
                 <Card bodyStyle={{padding:'0'}}>
                     <div className="cover" style={{backgroundImage : `url(${cover})`}}></div>
                     <div className="content">
+                        <div className="date">
+                            {date}
+                        </div>
                         <div className="title">
-                            <a href={url}>{title}</a>
+                            <a target="_blank" href={url}>{title}</a>
                         </div>
                     </div>
                     <a href={publisher.website}>
@@ -26,7 +29,7 @@ class ArticleItem extends Component {
                             {
                                 publisher.logo &&
                                 <div>
-                                    <img src={publisher.logo} width='70px' height='auto'/>
+                                    <img src={publisher.logo} width='70px' height={`${publisher.logoHeight ? publisher.logoHeight : 'auto'}`}/>
                                 </div>
                             }
                         </div>

@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         const title = `Elliot Cardin - Ultra-trail`;
         const description = `Ultra-trail, course d'endurance, végétalien.`;
-        const pageUrl = `http://elliotcardin.com/`;
+        const pageUrl = `https://elliotcardin.com/`;
         return (
             <Layout {...styles}>
                 <Helmet>
@@ -31,7 +31,7 @@ class Home extends Component {
                     <meta property="og:url" content={pageUrl}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:title" content={title}/>
-                    <meta property="og:image" content="http://elliotcardin.com/elliot-upclose.jpg"/>
+                    <meta property="og:image" content="https://elliotcardin.com/elliot-upclose.jpg"/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content='Elliot Cardin'/>
                     <meta property="og:locale" content='fr'/>

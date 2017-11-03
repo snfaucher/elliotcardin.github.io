@@ -8,7 +8,8 @@ const articles = [
             name: 'Distance +',
             website: 'http://distances.plus',
             logo: 'http://distances.plus/wp-content/uploads/2016/07/Logodp.png'
-        }
+        },
+        date : '2017-05-08'
     },
     {
         id: 2,
@@ -18,8 +19,10 @@ const articles = [
         publisher: {
             name: 'Move Proteine',
             website: 'https://moveproteine.com',
-            logo: 'https://moveproteine.com/skin/frontend/move/default/images/retina/logos/move-logo-transparent.png'
-        }
+            logo: 'https://moveproteine.com/skin/frontend/move/default/images/retina/logos/move-logo-transparent.png',
+            logoHeight : '70px'
+        },
+        date : '2016-11-02'
     },
     {
         id: 3,
@@ -30,19 +33,23 @@ const articles = [
             name: 'Running magazine',
             website: 'https://runningmagazine.ca',
             logo: 'https://2w6uh4g7gq2bgvs13eeaea11-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/Cdn-Running-logo-m2.png'
-        }
-    },
-    {
-        id: 4,
-        url: 'http://brixalerable.ca/elliot-cardin/',
-        cover: 'http://brixalerable.ca/attachments/Logo/foret-pour-site-web.jpg',
-        title: 'Elliot Cardin ultra motivé !',
-        publisher: {
-            name: "Brix à l'érable",
-            website: 'http://brixalerable.ca'
-        }
+        },
+        date : '2017-05-16'
     }
 ];
 
 
 export {articles};
+/**
+ },
+ {
+     id: 4,
+     url: 'http://brixalerable.ca/elliot-cardin/',
+     cover: 'http://brixalerable.ca/attachments/Logo/foret-pour-site-web.jpg',
+     title: 'Elliot Cardin ultra motivé !',
+     publisher: {
+         name: "Brix à l'érable",
+         website: 'http://brixalerable.ca'
+     }
+ }
+ */

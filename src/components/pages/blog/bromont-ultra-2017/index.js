@@ -19,7 +19,7 @@ class BromontUltra extends Component {
     render() {
         const title = `Bromont ultra 55k 2017, Malgré quelques difficultés je défends mon titre!`;
         const description = title;
-        const pageUrl = `http://elliotcardin.com/blog/bromont-ultra-2017`;
+        const pageUrl = `https://elliotcardin.com/blog/bromont-ultra-2017`;
 
         return (
             <Layout {...styles}>
