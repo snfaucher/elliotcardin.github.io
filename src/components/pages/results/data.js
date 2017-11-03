@@ -1,5 +1,13 @@
 const data = [
     {
+        eventName: "Bromont Ultra 2017",
+        time: "5:48:00",
+        position: "1er place",
+        distance: `55`,
+        date: '2017-10-08',
+        city: 'Bromont, Québec'
+    },
+    {
         eventName: "Trans-Vallée 2017",
         time: "7:33:24",
         position: "1er place",

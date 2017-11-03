@@ -9,6 +9,10 @@ export default css({
             paddingTop: 10
         }
     },
+    '& .page-content': {
+        backgroundColor: 'white',
+        paddingBottom: 30
+    },
     '& .jumbotron': {
         height: '80vh',
         backgroundSize: 'cover',

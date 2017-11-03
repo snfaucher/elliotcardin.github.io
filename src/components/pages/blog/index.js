@@ -52,12 +52,12 @@ class Blog extends Component {
                 </Header>
                 <Content>
                     <Row className="page-content">
-                        <Col xs={12} offset={6}>
+                        <Col sm={{span : 12, offset:6}} xs={24}>
                             <div className="blogCover" style={{backgroundImage:`url(/elliot-upclose.jpg)`}}>
                                 <div className="caption">Blog</div>
                             </div>
                             {
-                                _.map(posts, post => <PostItem post={post}/>)
+                                _.map(posts, post => <PostItem post={post} key={post.id}/>)
                             }
                         </Col>
                     </Row>

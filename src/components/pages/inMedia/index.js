@@ -10,6 +10,7 @@ import {Helmet} from "react-helmet";
 import StackGrid from "react-stack-grid";
 import {articles} from './data';
 import ArticleItem from './article-item';
+import sizeMe from 'react-sizeme';
 
 const data = _.reverse(_.sortBy(articles, 'date'));
 
@@ -18,6 +19,7 @@ const {Header, Footer, Content} = Layout;
 class InMedia extends Component {
 
     render() {
+        const {size : {width}} = this.props;
         const title = `Elliot Cardin - Dans les médias`;
         const description = `Ultra-trail, course d'endurance, végétalien.`;
         const pageUrl = `https://elliotcardin.com/in-media`;
@@ -52,17 +54,17 @@ class InMedia extends Component {
                 </Header>
                 <Content>
                     <Row className="page-content">
-                        <Col xs={18} offset={3}>
+                        <Col sm={{span:18, offset:3}} xs={24}>
                             <div className="page-content__title">
                                 <span>Dans les médias</span>
                             </div>
                             <StackGrid
-                                columnWidth={300}
+                                columnWidth={width <= 768 ? width * 0.8 : '33.33%'}
                                 gutterWidth={10}
                                 gutterHeight={10}
                             >
                                 {
-                                    _.map(data, article=> <ArticleItem article={article}/>)
+                                    _.map(data, article=> <ArticleItem article={article} key={article.id}/>)
                                 }
                             </StackGrid>
                         </Col>
@@ -79,4 +81,4 @@ class InMedia extends Component {
     }
 }
 
-export default InMedia;
+export default sizeMe()(InMedia);

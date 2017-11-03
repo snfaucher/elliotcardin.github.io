@@ -8,6 +8,7 @@
     "react-dom": "^15.5.4",
     "react-helmet": "^5.2.0",
     "react-responsive": "^1.x",
+    "react-sizeme": "^2.3.6",
     "react-stack-grid": "^0.5.0"
   },
   "devDependencies": {
