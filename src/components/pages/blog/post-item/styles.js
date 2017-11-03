@@ -1,9 +1,8 @@
 import {css} from 'glamor';
 
-const height = 100;
+const height = '40vh';
 export default css({
     backgroundColor: 'whitesmoke',
-    height,
     minHeight: height,
     marginBottom: 30,
     '& .cover': {
@@ -12,7 +11,6 @@ export default css({
         backgroundPosition: 'center center'
     },
     '& .content': {
-        height,
         display: 'flex',
         alignItems: 'center',
         padding: '15px'

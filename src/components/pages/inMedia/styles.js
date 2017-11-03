@@ -9,8 +9,14 @@ export default css({
             paddingTop: 10
         }
     },
-    '& .page-content' : {
-        marginTop : 60,
-        marginBottom: 60
+    '& .page-content': {
+        marginTop: 60,
+        minHeight: '120vh',
+        backgroundColor: 'whitesmoke',
+        '& .page-content__title': {
+            textAlign: 'center',
+            padding: '25px',
+            fontSize: '2.7em'
+        }
     }
 });

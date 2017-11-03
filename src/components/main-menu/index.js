@@ -93,6 +93,17 @@ class MainMenu extends Component {
                             </span>
                         </Link>
                     </MenuItem>
+                    <MenuItem key="media">
+                        <Link
+                            to="/in-media"
+                            style={{
+                            textDecoration: 'none'
+                        }}>
+                            <span className={captionClass}>
+                                Média
+                            </span>
+                        </Link>
+                    </MenuItem>
                     <MenuItem key="blog">
                         <Link
                             to="/blog"
@@ -197,6 +208,17 @@ class MainMenu extends Component {
                                     <span className={captionClass}>
                                         Résultats
                                     </span>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem key="media">
+                                <Link
+                                    to="/in-media"
+                                    style={{
+                            textDecoration: 'none'
+                        }}>
+                            <span className={captionClass}>
+                                Média
+                            </span>
                                 </Link>
                             </MenuItem>
                             <MenuItem key="blog">

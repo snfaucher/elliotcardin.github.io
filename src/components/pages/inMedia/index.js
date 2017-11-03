@@ -53,6 +53,9 @@ class InMedia extends Component {
                 <Content>
                     <Row className="page-content">
                         <Col xs={18} offset={3}>
+                            <div className="page-content__title">
+                                <span>Dans les médias</span>
+                            </div>
                             <StackGrid
                                 columnWidth={300}
                                 gutterWidth={10}

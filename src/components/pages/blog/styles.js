@@ -10,7 +10,8 @@ export default css({
         }
     },
     '& .page-content': {
-        marginTop: '10vh',
+        paddingTop: '10vh',
+        backgroundColor: 'whitesmoke',
         '& .blogCover': {
             backgroundPosition: 'center center',
             backgroundSize: 'cover',

@@ -14,17 +14,18 @@ class PostItem extends Component {
         return (
             <div key={post} {...styles}>
                 <Card bodyStyle={{padding:'0'}}>
-                    <Col span={8}>
-                        <div className="cover" style={{backgroundImage : `url(${cover})`}}></div>
-                    </Col>
-                    <Col span={16}>
-
-                        <div className="content">
-                            <div className="title">
-                                <a href={url}>{title}</a>
+                    <a href={url}>
+                        <Col span={24}>
+                            <div className="cover" style={{backgroundImage : `url(${cover})`}}></div>
+                        </Col>
+                        <Col span={24}>
+                            <div className="content">
+                                <div className="title">
+                                    <a href={url}>{title}</a>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
+                        </Col>
+                    </a>
                 </Card>
             </div>
         );
