@@ -5,7 +5,6 @@ import MainMenu from  '../../../main-menu';
 import Layout  from 'antd/lib/layout';
 import Row from 'antd/lib/row';
 import Col from 'antd/lib/col';
-import Card from 'antd/lib/card';
 import Like from '../../../fb/like';
 import Share from '../../../fb/share';
 import {Helmet} from "react-helmet";
@@ -75,14 +74,18 @@ class BromontUltra extends Component {
                                 <div className="item">
                                     <div className="cover">
                                         <iframe
-                                            title="bu2017"
+                                            title="bu2017-fb"
+                                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fbromontultra%2Fvideos%2F1163590847075010%2F&show_text=0&width=540"
+                                            style={{border:'none',overflow:'hidden', minHeight:'100%'}}
+                                            scrolling="no"
+                                            allowTransparency="true"
+                                            allowFullScreen="true"
                                             width="100%"
-                                            height="100%"
-                                            src="https://www.youtube.com/embed/SLcHvoIP1rU"
+                                            height="130%"
                                             frameBorder="0"
-                                            allowfullscreen>
-                                        </iframe>
+                                        ></iframe>
                                     </div>
+
                                     <div className="content">
                                         <p>
                                             Je me suis bien préparer pour cet ultra. Pendant deux mois j'ai augmenté mon
@@ -138,6 +141,16 @@ class BromontUltra extends Component {
                                             cette
                                             course j'ai énormément appris.</p>
                                     </div>
+                                    <div className="cover">
+                                        <iframe
+                                            title="bu2017"
+                                            width="100%"
+                                            height="100%"
+                                            src="https://www.youtube.com/embed/SLcHvoIP1rU"
+                                            frameBorder="0"
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
                                 </div>
                             </div>
                             <div className="item-wrapper">
@@ -166,10 +179,10 @@ class BromontUltra extends Component {
                     </Row>
                 </Content>
                 <Footer>
-                    <div className="home__footer">
-                        <MyFooter/>
+                    <div
+                        className="home__footer">
+                        <MyFooter />
                     </div>
-
                 </Footer>
             </Layout>
 
