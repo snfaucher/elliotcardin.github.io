@@ -91,6 +91,18 @@ class About extends Component {
                                                 </div>
                                             </div>
                                             <div className="item">
+                                                <img src="/media/suunto.svg" alt='Suunto'/>
+                                                <div className="caption">
+                                                    <a href='https://www.suunto.com/'>Suunto</a>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <img src="/media/kronobar.jpg" alt='Kronobar'/>
+                                                <div className="caption">
+                                                    <a href='https://www.kronobar.com/'>Kronobar</a>
+                                                </div>
+                                            </div>
+                                            <div className="item">
                                                 <img src="/media/move.png" alt='Move protein'/>
                                                 <div className="caption">
                                                     <a href='https://moveprotein.com/'>Move protein</a>

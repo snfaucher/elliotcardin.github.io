@@ -9,7 +9,7 @@ const articles = [
             website: 'http://distances.plus',
             logo: 'http://distances.plus/wp-content/uploads/2016/07/Logodp.png'
         },
-        date : '2017-05-08'
+        date: '2017-05-08'
     },
     {
         id: 2,
@@ -20,9 +20,9 @@ const articles = [
             name: 'Move Proteine',
             website: 'https://moveproteine.com',
             logo: 'https://moveproteine.com/skin/frontend/move/default/images/retina/logos/move-logo-transparent.png',
-            logoHeight : '70px'
+            logoHeight: '70px'
         },
-        date : '2016-11-02'
+        date: '2016-11-02'
     },
     {
         id: 3,
@@ -34,8 +34,44 @@ const articles = [
             website: 'https://runningmagazine.ca',
             logo: 'https://2w6uh4g7gq2bgvs13eeaea11-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/Cdn-Running-logo-m2.png'
         },
-        date : '2017-05-16'
+        date: '2017-05-16'
+    },
+    {
+        id: 4,
+        url: 'http://distances.plus/evenements/quebecois-podium-bear-mountain-2017/',
+        cover: 'http://distances.plus/wp-content/uploads/2017/05/cardin_blanchard_gardner_17_bear_mountain-758x426.jpg',
+        title: 'Les Québécois écrasent la concurrence à Bear Mountain',
+        publisher: {
+            name: 'Distance +',
+            website: 'http://distances.plus',
+            logo: 'http://distances.plus/wp-content/uploads/2016/07/Logodp.png'
+        },
+        date: '2017-05-14'
+    },
+    {
+        id: 5,
+        url: 'http://distances.plus/evenements/sarah-bergeron-larouche-trans-vallee-2017/',
+        cover: 'http://distances.plus/wp-content/uploads/2017/08/sarah_bergeron_larouche_2017_Trans_Vallee_Photo_Olivier_Mura-300x169.jpg',
+        title: 'Sarah Bergeron-Larouche bat son propre record au Trans Vallée',
+        publisher: {
+            name: 'Distance +',
+            website: 'http://distances.plus',
+            logo: 'http://distances.plus/wp-content/uploads/2016/07/Logodp.png'
+        },
+        date: '2017-08-21'
+    },
+    {
+        id: 6,
+        url: 'http://www.greatveganathletes.com/content/vegan-golds-bromont',
+        cover: 'http://www.greatveganathletes.com/sites/default/files/Alister%20Gardner%202017%20Bromont%2002%20MINI.jpg',
+        title: 'Mountain challenge win for vegan Alister',
+        publisher: {
+            name: 'Great Vegan Athletes',
+            website: 'http://www.greatveganathletes.com'
+        },
+        date: '2017-10-08'
     }
+
 ];
 
 

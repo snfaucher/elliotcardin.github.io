@@ -135,7 +135,47 @@ const data = [
         distance: '22',
         date: '2016-06-25',
         city: 'Sainte-Anne-des-Monts, Québec'
-    }
+    },
+    {
+        eventName: 'Trail des neiges Orford',
+        time: "1:24:47",
+        position: '5e place',
+        distance: '13',
+        date: '2018-03-17',
+        city: 'Orford, Québec'
+    },
+    {
+        eventName: 'TNFEC, NY Bear Mountain',
+        time: "7:57:37",
+        position: '7e place',
+        distance: '80',
+        date: '2018-05-05',
+        city: 'New York'
+    },
+    {
+        eventName: 'Trail la clinique du coureur',
+        time: "4:58:12",
+        position: '5e place',
+        distance: '50',
+        date: '2018-06-09',
+        city: 'Granby'
+    },
+    {
+        eventName: 'Québec Méga Trail',
+        time: "11:27:00",
+        position: '2e place',
+        distance: '100',
+        date: '2018-06-30',
+        city: 'Mont-Saint-Anne, Quebec'
+    },
+    {
+        eventName: 'Ultratrail Académie',
+        time: "2:06:33",
+        position: '3e place',
+        distance: '23',
+        date: '2018-07-14',
+        city: 'Port-Neuf, Quebec'
+    },
 ];
 
 export default data;
